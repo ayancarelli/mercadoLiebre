@@ -1,0 +1,49 @@
+body{
+    font-family: 'Roboto', sans-serif;
+   font-size: 12px;
+}
+body ul{
+    
+    list-style-type: none;
+}
+
+    /*header*/
+header{
+    background-color: #eac926;
+   
+}
+header a{
+    text-decoration: none;
+}
+.img-logo{
+    height: 15px;
+}
+p{
+    font-size: 12px;
+}
+    /*main*/
+
+main h2{
+    font-size: 24px;
+}
+
+#card-precio{
+    font-size: 18px;
+}
+
+#card-descuento{
+   font-size: 16px;
+}
+
+#card-nombre{
+    font-size: 16px;
+}
+
+/* footer*/
+#footer{
+    text-align: center;
+}
+#footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
