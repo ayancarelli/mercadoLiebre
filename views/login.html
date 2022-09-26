@@ -36,8 +36,8 @@
             </ul>
             
             <ul class="usuario-header">
-                <li><a href="#">Crea tu Cuenta <i class="fa-regular fa-id-card"></i></a></li>
-                <li><a href="#">Ingresa <i class="fa-solid fa-right-to-bracket"></i></i></a></li>
+                <li><a href="/registro">Crea tu Cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresa <i class="fa-solid fa-right-to-bracket"></i></i></a></li>
                 <li><a href="#">Mis Compras <i class="fa-regular fa-basket-shopping"></i></a></li>
             </ul>
             <div class="boton-ham">
@@ -46,23 +46,19 @@
         </nav>
     </header>
     <main>
+        
         <div class="formulario">
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label"></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="usuario@hayequipo.com">
-                    
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label" ></label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Elija su contraseña" >
-                </div>
-                <div class="mb-3">
-                    <a href="/" id="button" type="submit" class="btn btn-primary">ENVIAR</a>
-                </div>
-            </form> 
-         </div>
-    </main>           
+
+        <section class="form-register">
+            
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre de usuario" required>          
+            <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Elegí tu contraseña" required>
+            <a href="/"><input class="botons" type="submit" value="Ingresar" id="boton-login"></a>
+            
+          </section>
+        </div>
+       
+    </main>         
     <footer>
         <div class="footer">
             <div id="footer">
@@ -92,7 +88,7 @@
                     ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
                 </p>
             </div>
-        </div>
+        </div> 
         <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
     </footer>
     <script src="https://kit.fontawesome.com/d6019aa65f.js" crossorigin="anonymous"></script>

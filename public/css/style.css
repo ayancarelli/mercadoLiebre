@@ -88,7 +88,7 @@ header a{
 
 .titulares{
     font-size: 24px;
-    margin-top: 10px;
+    margin: 15px;
 }
 .card{
    
@@ -99,6 +99,13 @@ header a{
     border-radius: 5px;
 
 }
+.card:hover{
+    box-shadow : 0px 0px 10px rgb(100, 100, 100);
+}
+.card:hover #card-nombre{
+    display: block;
+}
+
 .card-list {
     border-top: solid 1px #ebebeb;
     padding: 10px;
@@ -125,6 +132,10 @@ main i{
     right: 20px;
     top: -15px;
 }
+.card-list i:hover{
+    transform: rotate(-90deg);
+    transition: 2s;
+}
 
 #card-precio{
     font-size: 18px;
@@ -147,61 +158,94 @@ main i{
 
 /*main de usuario*/
 
-.formulario{
-    display: flex;
-    flex-direction: column;
-    background-color: #ebebeb;
-    justify-content: space-around;
-    align-items: center;
-    padding: 15px;
+#boton-login:hover{
+    background-color: #0022aa;
     
-
 }
-.form-control{
-    width: 250px;
+.form-check-label{
+    margin-bottom: 10px;
 }
 
-.formulario .mb-3{
-    margin: 15px;
-    text-align: center;
+.form-register {
+    width: 400px;
+    background-color: #ebebeb;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
    
     
-}
-.mb-3 #button{
-    background-color: #1259c3;
-    padding: 5px;
-    color:white;
-    width: 250px;
+  }
+  .form-register h2 {
+   color: black;
+    margin: 10px;
+  }
+  .controls {
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
     
+    color: #666;
+  }
+  .form-register .botons {
+    width: 100%;
+    background: #1259c3;
+    
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    
+  }
+ .formulario{
+   width: 100%;
+    background-color: #ebebeb; 
+
 }
-.mb-3 .form-label{
-    width: 300px;
+.form-register li{
+    list-style: none;
 }
-.intereses ul{
-    list-style-type:georgian;
+.p-usuario {
+display: flex;
+justify-content:space-around
+}
+.intereses{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+   
 }
     
 /* footer*/
 
-.footer{
+
+        .footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 13%;
-}
+    }
 
 #footer{
     text-align: center;
     margin: 20px;
+    
+    min-width: 200px;
+    max-width: 250px;
 }
 #footer i{
     font-size: 2em;
     margin-bottom: 10px;
     color: #1259c3;
 }
+#footer i:hover{
+    color:#39b54a;
+}
+
 footer h4{
-    margin: 10px;
+    margin: 5px;
     padding-left: 15px;
 }
 @media (min-width: 500px) {
@@ -275,5 +319,11 @@ footer h4{
 
 
     /* footer*/
-    
+    .footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

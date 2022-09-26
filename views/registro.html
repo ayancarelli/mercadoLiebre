@@ -36,8 +36,8 @@
             </ul>
             
             <ul class="usuario-header">
-                <li><a href="#">Crea tu Cuenta <i class="fa-regular fa-id-card"></i></a></li>
-                <li><a href="#">Ingresa <i class="fa-solid fa-right-to-bracket"></i></i></a></li>
+                <li><a href="/registro">Crea tu Cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresa <i class="fa-solid fa-right-to-bracket"></i></i></a></li>
                 <li><a href="#">Mis Compras <i class="fa-regular fa-basket-shopping"></i></a></li>
             </ul>
             <div class="boton-ham">
@@ -47,46 +47,46 @@
     </header>
     <main>
         <div class="formulario">
-            <form>
-                <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label"></label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre y apellido">
-                </div>
-                <div class="mb-3">
-                    <label for="formGroupExampleInput2" class="form-label"></label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nombre de usuari@">
-                </div>
-                    <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label"></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-                    
-                </div>
+
+            <section class="form-register">
+                
+                <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre y apellido" required>
+                <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Nombre de usuario" required>
+                <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo" required>
                 <h2>Fecha de nacimiento</h2>
-                <div class="mb-3">
-                    <input type="date" class="form-control">
-                </div>
-                <div class="mb-3">
-                    <label for="formGroupExampleInput2" class="form-label"></label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Domicilio">
-                </div>
+                <input class="controls" type="date" name="fecha-nacimiento" id="nacimiento" required>
+                
+                
                 <h2>Perfil de usuario</h2>
-                    <ul>
-                        <li>Comprador</li>
-                        <li>Vendedor</li>
-                    </ul>
-                <h2 class="intereses">Intereses</h2>
-                    <ul >
-                        <li>Electro</li>
-                        <li>Moda</li>
-                        <li>Hogar</li>
-                        <li>Jugueteria</li>
-                        <li>Vida sana</li>
-                    </ul>
-                <div class="mb-3">
-                    <a href="/" id="button" type="submit" class="btn btn-primary">ENVIAR</a>
-                </div>
-            </form> 
+                <div class="p-usuario">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Comprador</label>
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Vendedor</label>
+                </div>      
+                <h2>Intereses</h2>
+                    
+                    <div class="intereses">
+                        <label class="form-check-label" for="exampleCheck1">Electro</label>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+                        <label class="form-check-label" for="exampleCheck1">Moda</label>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Hogar</label>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Jugueteria</label>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Vida sana</label>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                     </div>
+                     <input class="controls" type="file" name="foto-usuario" id="foto" placeholder="Foto de usuario" required>
+                     <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required>
+                     <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Confirmar contraseña" required>
+                     <a href="/"><input class="botons" type="submit" value="Registrar"></a>
+                     <a href="/"><input class="botons" type="submit" value="borrar"></a>
+            </section>
         </div>
+       
     </main>           
     <footer>
         <div class="footer">
