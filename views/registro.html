@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        
+        <title>MercadoLiebre</title>
+    </head>
+<body>
+    <header>
+        <div class="header-conf">
+            <div class="header-logo">
+                <img id="img-logo" src="/img/logo-mercado-liebre.svg" alt="imagen-logo">
+            </div>
+                        
+            <div class="barra-busqueda">
+                <input placeholder="Buscar productos, marcas" type="search" id="barra-busqueda">
+                <button class="boton-busqueda">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                        
+            </div>
+            <div class="p-header">
+                <p id="p-header"> <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>    
+        </div>
+        <nav class="nav">
+            <ul class="acciones-header">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            
+            <ul class="usuario-header">
+                <li><a href="#">Crea tu Cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                <li><a href="#">Ingresa <i class="fa-solid fa-right-to-bracket"></i></i></a></li>
+                <li><a href="#">Mis Compras <i class="fa-regular fa-basket-shopping"></i></a></li>
+            </ul>
+            <div class="boton-ham">
+                <button class="btn btn-primary" id="magic-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars" ></i></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="formulario">
+            <form>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label"></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre y apellido">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label"></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nombre de usuari@">
+                </div>
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                    
+                </div>
+                <h2>Fecha de nacimiento</h2>
+                <div class="mb-3">
+                    <input type="date" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label"></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Domicilio">
+                </div>
+                <h2>Perfil de usuario</h2>
+                    <ul>
+                        <li>Comprador</li>
+                        <li>Vendedor</li>
+                    </ul>
+                <h2 class="intereses">Intereses</h2>
+                    <ul >
+                        <li>Electro</li>
+                        <li>Moda</li>
+                        <li>Hogar</li>
+                        <li>Jugueteria</li>
+                        <li>Vida sana</li>
+                    </ul>
+                <div class="mb-3">
+                    <a href="/" id="button" type="submit" class="btn btn-primary">ENVIAR</a>
+                </div>
+            </form> 
+        </div>
+    </main>           
+    <footer>
+        <div class="footer">
+            <div id="footer">
+                <i class="fa-solid fa-credit-card"></i>
+                <h3>
+                    Pagá con tarjeta o efectivo
+                </h3>
+                <p>
+                    Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
+                </p>
+            </div>
+            <div id="footer">
+                <i class="fa-solid fa-gift"></i>
+                <h3>
+                    Envío gratis desde $ 2.500
+                </h3>
+                <p>
+                    Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.
+                </p>
+            </div>
+            <div id="footer">
+                <i class="fa-solid fa-user-shield"></i>
+                <h3>
+                    Seguridad, de principio a fin
+                </h3>
+                <p>
+                    ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
+                </p>
+            </div>
+        </div>
+        <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+    </footer>
+    <script src="https://kit.fontawesome.com/d6019aa65f.js" crossorigin="anonymous"></script>
+</body>
+</html>

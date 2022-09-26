@@ -8,9 +8,10 @@ body{
     font-size: 12px;    
 }
 
-body ul{
+.nav ul{
     
     list-style-type: none;
+    color: black;
 }
 
     /*header*/
@@ -19,20 +20,32 @@ header{
     background-color: #eac926;
        
 }
+.header-conf{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
 header a{
     text-decoration: none;
     display: none;
 }
+.header-logo{
+    width: 50%;
+}
+
 #img-logo{
-    width: 130px;
+    max-width: 180px;
     margin: 15px;
 }
-#barra-busqueda{
-    width: 160px;
-    margin: 10px ;
+.barra-busqueda{
+    align-items: center;
+    width: 50%;
 }
-.barra-busqueda i{
-    background-color: white;
+
+.boton-busqueda{
+    margin-left: -10px;
 }
 #p-header{
     margin:10px;
@@ -58,35 +71,116 @@ header a{
 }
 
     /*main*/
-.titulares{
-    font-size: 24px;
-}
-#card-precio{
-    font-size: 18px;
-}
-#card-descuento{
-    font-size: 16px;
-}
-#card-nombre{
-    font-size: 16px;
-}
-.card{
-   
-    width: 300px;
-    border: solid 1px #ebebeb;
-    margin: 20px;
-    background-color: white;
-    border-radius: 2px;
-}
-
 .articulos{
     background-color: #ebebeb;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+        
+}
+.varias-tarjetas{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
+.titulares{
+    font-size: 24px;
+    margin-top: 10px;
+}
+.card{
+   
+    width: 280px;
+    border: solid 1px #ebebeb;
+   
+    background-color: white;
+    border-radius: 5px;
+
+}
+.card-list {
+    border-top: solid 1px #ebebeb;
+    padding: 10px;
+    position: relative;
+
+}
+.precio-promo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    
+}
+main i{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+#card-precio{
+    font-size: 18px;
+    padding-top: 10px;
+    width: 30%;
+    text-align: center;
+    margin-left: 10px;
+}
+#card-descuento{
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+    padding-right: 10px;
+}
+#card-nombre{
+    font-size: 16px;
+    padding-top: 10px;
+    display: none;
+}
+
+/*main de usuario*/
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    background-color: #ebebeb;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    
+
+}
+.form-control{
+    width: 250px;
+}
+
+.formulario .mb-3{
+    margin: 15px;
+    text-align: center;
+   
+    
+}
+.mb-3 #button{
+    background-color: #1259c3;
+    padding: 5px;
+    color:white;
+    width: 250px;
+    
+}
+.mb-3 .form-label{
+    width: 300px;
+}
+.intereses ul{
+    list-style-type:georgian;
+}
+    
 /* footer*/
 
 .footer{
@@ -109,4 +203,77 @@ header a{
 footer h4{
     margin: 10px;
     padding-left: 15px;
+}
+@media (min-width: 500px) {
+    
+    /*header*/
+    header a {
+        display: flex;
+    }
+    .header-conf{
+        justify-content: center;
+        align-items: center;
+    }
+    .boton-ham{
+        display: none;
+    }
+    .barra-busqueda{
+        width: 33%;
+    }
+    .header-logo{
+        width: 33%;
+    }
+    .p-header{
+        width: 33%;
+    }
+    .nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        color: black;
+    }
+    .acciones-header{
+        display: flex;
+        gap: 5px;
+        margin: 10px;
+        color: black;
+    }
+    .usuario-header{
+        display: flex;
+        gap: 5px;
+        margin: 10px;
+    }
+     /*main login*/
+     .form-control{
+        width: 300px;
+    }
+       
+
+    .card{
+        box-shadow : 0px 0px 10px rgb(100, 100, 100);
+       
+
+    }
+    #card-nombre{
+        display: block;
+    }
+   
+   /*main registro*/
+    
+
+    /* footer*/
+    .footer{
+        
+        padding: 30px;
+    }
+}
+@media (min-width: 769px) {
+    /*header*/
+
+    /*main*/
+
+
+    /* footer*/
+    
 }
