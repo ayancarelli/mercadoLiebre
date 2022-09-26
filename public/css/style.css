@@ -13,6 +13,9 @@ body{
     list-style-type: none;
     color: black;
 }
+.nav li{
+    margin-left: 8px;
+}
 
     /*header*/
 header{
@@ -234,7 +237,7 @@ justify-content:space-around
     margin: 20px;
     
     min-width: 200px;
-    max-width: 250px;
+    max-width: 380px;
 }
 #footer i{
     font-size: 2em;
@@ -273,7 +276,7 @@ footer h4{
     }
     .nav{
         display: flex;
-        flex-wrap: wrap;
+        
         justify-content: space-between;
         align-items: center;
         color: black;
@@ -313,9 +316,14 @@ footer h4{
         padding: 30px;
     }
 }
-@media (min-width: 769px) {
+@media (min-width: 789px) {
     /*header*/
-
+#barra-busqueda{
+    width: 250px;
+}
+.nav li{
+    margin-left: 12px;
+}
     /*main*/
 
 
@@ -323,8 +331,8 @@ footer h4{
     .footer{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        
+        justify-content: center;
         align-items: center;
     }
 }
